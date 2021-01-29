@@ -94,8 +94,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "**/*.swift"
-  spec.exclude_files = "Classes/Exclude"
+  #spec.source_files  = "**/*.swift"
+  spec.ios.vendored_frameworks = 'CHDemoBinary.framework'
+
+  #spec.exclude_files = "Classes/Exclude"
   
  # spec.test_spec do|test|
   #test.source_files = "CHLoginKitTests/*.swift"
