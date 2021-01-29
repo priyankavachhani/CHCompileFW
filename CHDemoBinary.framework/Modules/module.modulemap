@@ -1,0 +1,11 @@
+framework module CHDemoBinary {
+  umbrella header "CHDemoBinary.h"
+
+  export *
+  module * { export * }
+}
+
+module CHDemoBinary.Swift {
+    header "CHDemoBinary-Swift.h"
+    requires objc
+}
